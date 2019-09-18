@@ -31,8 +31,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            This is a Progressive web app, you can save it to your phone's homescreen.
           </p>
+
+          <input type="file" accept="image/*" capture />
 
           {/* <div className="container">
             <input className="btn btn-primary" type="submit" value="Auth" onClick={this.authFunc} />
