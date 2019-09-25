@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactGA from 'react-ga'
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {}
     this.authFunc = this.authFunc.bind(this);
+  }
+
+  componentDidMount() {
+    ReactGA.initialize('UA-148716923-1', {})
+    ReactGA.pageview(window.location.pathname + window.location.search)
   }
 
   authFunc() {
